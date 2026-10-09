@@ -1,0 +1,59 @@
+.filters {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    flex-shrink: 0;
+    width: 250px;
+    border-right: 1px solid #eee;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.customizable {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filterItem {
+    border-top: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.filterHeader {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.filterOptions {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.filterOptions li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.filter-selected {
+    font-size: 13px;
+    color: #777;
+    margin-top: 5px;
+}
+
+@media (max-width:768px) {
+    .filters {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 250px;
+        height: 100vh;
+        z-index: 1000;
+        background: white;
+        overflow-y: auto;
+
+
+    }
+}
